@@ -6,28 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tansyitul Muta'allimin</title>
     <link rel="stylesheet" href="./docs/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="overflow-hidden font-['Poppins']">
     <!-- Navbar -->
-    <nav>
-        <div class="bg-red-400">
-            <p>YPI Tansyitul Muta'allimin</p>
+    <nav class="flex bg-transparent py-6 px-6 justify-between">
+        <div class="block sm:hidden">
+            <span class="block font-semibold text-1xl">YPI Tansyitul Muta'allimin </span>
         </div>
-        <ul>
+        <ul class="absolute translate-x-full right-0 flex flex-col bg-green-400 top-0 h-screen justify-evenly z-1 w-screen item-center transition-all duration-500 ease-out items-center">
             <li> <a href="#"> Home </a> </li>
             <li> <a href="#"> About </a> </li>
             <li> <a href="#"> Gallery </a> </li>
             <li> <a href="#"> Contact </a> </li>
         </ul>
-        <div>
+        <div class="hidden">
             <a href="#"> 081296315533 </a>
         </div>
-        <div>
-            <input type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="menu-toggle flex flex-col h-6 justify-between relative sm:hidden">
+            <input type="checkbox" class="absolute w-9 h-8 opacity-0 cursor-pointer peer z-10">
+            <span class="block w-9 h-1 bg-black origin-left peer-checked:rotate-45 peer-checked:-translate-x-px peer-checked:-translate-y-0.5 tansition-all duration-500 ease-out"></span>
+            <span class="block w-9 h-1 bg-black peer-checked:opacity-0 tansition-all duration-100 ease-out"></span>
+            <span class="block w-9 h-1 bg-black origin-left peer-checked:-rotate-45 peer-checked:-translate-x-0.5 peer-checked:translate-y-0.5 peer-checked:bg-slate-800 tansition-all duration-500 ease-out"> </span>
         </div>
     </nav>
+    <script src="./docs/script.js"></script>
 </body>
 </html>
