@@ -10,33 +10,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="overflow-x-hidden font-['Poppins']">
-    <!-- Navbar -->
-    <nav class="flex bg-transparent mx-6 my-6 justify-between sm:pb-8 sm:border-b-2">
-        <div class="block sm:hidden">
-            <span class="block font-semibold text-1xl">YPI Tansyitul Muta'allimin </span>
+<body class="overflow-x-hidden font-['Poppins'] ">
+    <!-- Navbar Section-->
+    <nav class="flex bg-bgcolor px-6 pt-6 text-textcolor pb-6 justify-between 
+    sm:py-12 sm:px-16">
+
+        <div class="block 
+        sm:hidden">
+            <span class="block font-semibold">YPI Tansyitul Muta'allimin </span>
         </div>
-        <ul class="absolute translate-x-full right-0 flex flex-col bg-green-800 top-0 h-screen justify-evenly z-1 w-screen item-center transition-all duration-500 ease-out items-center sm:static sm:translate-x-0 sm:w-3/5 sm:flex-row sm:h-auto sm:justify-evenly sm:bg-transparent">
+
+        <ul class="absolute translate-x-full right-0 flex flex-col bg-bgcolor top-0 h-screen justify-evenly w-screen item-center transition-all duration-500 ease-out items-center font-semibold text-2xl
+        sm:static sm:translate-x-0 sm:flex-row sm:h-auto sm:text-base sm:font-normal sm:justify-start sm:gap-10
+        lg:gap-16
+        2xl:gap-24">
             <li> <a href="#"> Home </a> </li>
             <li> <a href="#"> About </a> </li>
             <li> <a href="#"> Gallery </a> </li>
             <li> <a href="#"> Contact </a> </li>
         </ul>
-        <div class="hidden sm:block">
+        <div class="hidden 
+        sm:block">
             <a href="#"> 081296315533 </a>
         </div>
-        <div class="menu-toggle flex flex-col h-6 justify-between relative sm:hidden">
+        <div class="menu-toggle flex flex-col h-6 justify-between relative 
+        sm:hidden">
             <input type="checkbox" class="absolute w-9 h-8 opacity-0 cursor-pointer peer z-10">
-            <span class="block w-9 h-1 bg-black origin-left peer-checked:rotate-45 peer-checked:-translate-x-px peer-checked:-translate-y-0.5 tansition-all duration-500 ease-out"></span>
-            <span class="block w-9 h-1 bg-black peer-checked:opacity-0 tansition-all duration-100 ease-out"></span>
-            <span class="block w-9 h-1 bg-black origin-left peer-checked:-rotate-45 peer-checked:-translate-x-0.5 peer-checked:translate-y-0.5 peer-checked:bg-slate-800 tansition-all duration-500 ease-out"> </span>
+            <span class="block w-9 h-1 bg-textcolor origin-left peer-checked:rotate-45 peer-checked:-translate-x-px peer-checked:-translate-y-0.5 tansition-all duration-500 ease-out"></span>
+            <span class="block w-9 h-1 bg-textcolor peer-checked:opacity-0 tansition-all duration-100 ease-out"></span>
+            <span class="block w-9 h-1 bg-textcolor origin-left peer-checked:-rotate-45 peer-checked:-translate-x-0.5 peer-checked:translate-y-0.5 peer-checked:bg-textcolor tansition-all duration-500 ease-out"> </span>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <div>
-        <img src="#" alt="">
+    <div class="flex justify-center h-screen bg-center bg-no-repeat bg-cover" style="background-image: url('./src/img/mainbanner.png');">
+        <div class="flex flex-col justify-center -mt-44 text-center mx-6">
+            <img src="./src/img/logo_tansyit.png" alt="Logo Tansyitul" class="mx-auto w-28 mb-8">
+            <span class="block font-bold text-[24px] mb-2"> YPI Tansyitul Muta'allimin</span>
+            <span class="block font-light text-[14px]"> Menciptakan Generasi Cerdas, Beriman, dan Taqwa</span>
+        </div>
     </div>
+
+    <!-- <div class="h-96">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat dignissimos repellendus, dolorum illum perspiciatis blanditiis, vel at perferendis aliquid aspernatur alias facere in rem placeat aperiam obcaecati consequatur autem modi?</p>
+    </div> -->
     <script src="./docs/script.js"></script>
 </body>
 </html>
